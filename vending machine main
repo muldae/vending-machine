@@ -1,0 +1,17 @@
+value = int(input("물건 가격: "))
+pay = int(input("지불 가격: "))
+remain = pay - value
+
+money_1000 = remain // 1000
+remain = remain % 1000
+
+money_500 = remain // 500
+remain = remain % 500
+
+money_100 = remain // 100
+remain = remain % 100
+
+money_50 = remain // 50
+
+print("\n동전의 갯수\n")
+print("1000원 = ", money_1000,  "\n500원 = ",money_500, "\n100원 = ",money_100, "\n50원 = ", money_50 )
